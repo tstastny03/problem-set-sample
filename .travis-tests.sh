@@ -13,5 +13,5 @@ assert_in_stdout compressed
 
 source travis-vars.sh
 
-assert_equal $PROJECT directory
-assert_equal $ANSWER1 6.24
+run assert_equal $PROJECT directory
+run assert_equal $ANSWER1 6.24
