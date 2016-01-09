@@ -1,0 +1,2 @@
+PROJECT=directory
+ANSWER1=6.24

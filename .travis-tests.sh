@@ -10,3 +10,8 @@ assert_no_stderr
 
 run check_bed file result.bed.gz
 assert_in_stdout compressed
+
+source travis-vars.sh
+
+assert_equal $PROJECT directory
+assert_equal $ANSWER1 6.24
