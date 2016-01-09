@@ -17,4 +17,4 @@ run test_equal_dir
 assert_equal "$PROJECT" "project"
 
 run test_equal_project 
-assert_equal "$ANSWER1" "6.24"
+assert_equal "$ANSWER1" 6.24

@@ -1,2 +1,2 @@
 PROJECT="project"
-ANSWER1="6.24"
+ANSWER1=6.24
