@@ -1,2 +1,2 @@
-PROJECT=directory
-ANSWER1=6.24
+PROJECT="project"
+ANSWER1="6.24"
