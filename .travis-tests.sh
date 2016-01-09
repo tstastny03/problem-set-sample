@@ -14,7 +14,7 @@ assert_in_stdout compressed
 source travis-vars.sh
 
 run test_equal_dir
-assert_equal $PROJECT project
+assert_equal "$PROJECT" "project"
 
 run test_equal_project 
-assert_equal $ANSWER1 6.24
+assert_equal "$ANSWER1" "6.24"
