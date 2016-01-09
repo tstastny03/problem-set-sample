@@ -1,6 +1,6 @@
 #! /bin/bash
 
-test -e ssshtest || wget -q https://raw.githubusercontent.com/ryanlayer/ssshtest/master/ssshtest
+test -e ssshtest || wget -q https://raw.githubusercontent.com/jayhesselberth/ssshtest/master/ssshtest
 source ssshtest
 
 set -o nounset
@@ -14,7 +14,7 @@ assert_in_stdout compressed
 source travis-vars.sh
 
 run test_equal_dir
-assert_equal "$PROJECT" "project"
+assert_equal_str "$PROJECT" "project"
 
 run test_equal_project 
-assert_equal "$ANSWER1" 6.24
+assert_equal_str "$ANSWER1" 6.24
