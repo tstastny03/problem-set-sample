@@ -15,3 +15,6 @@ source travis-vars.sh
 
 run assert_equal $PROJECT directory
 run assert_equal $ANSWER1 6.24
+
+run assert_equal $PROJECT notok
+run assert_equal $ANSWER1 8000
