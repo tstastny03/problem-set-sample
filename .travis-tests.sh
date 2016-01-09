@@ -5,16 +5,16 @@ source ssshtest
 
 set -o nounset
 
-run check_dir ls projects/
+run test_dir ls projects/
 assert_no_stderr
 
-run check_bed file result.bed.gz
+run test_bed file result.bed.gz
 assert_in_stdout compressed
 
 source travis-vars.sh
 
-run assert_equal $PROJECT directory
-run assert_equal $ANSWER1 6.24
+run test_equal_dir
+assert_equal $PROJECT project
 
-run assert_equal $PROJECT notok
-run assert_equal $ANSWER1 8000
+run test_equal_project 
+assert_equal $ANSWER1 6.24
